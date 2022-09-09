@@ -43,6 +43,7 @@ function Index() {
       <div className="wrapper">
         <JardinHeader />
         <div className="main">
+        
           <Download />
           <FotosJardin />
           <FormularioContacto />
