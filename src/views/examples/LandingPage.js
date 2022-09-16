@@ -1,6 +1,4 @@
 import React from "react";
-
-// reactstrap components
 import {
   Button,
   Input,
@@ -11,11 +9,9 @@ import {
   Row,
   Col
 } from "reactstrap";
-
-// core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import JardinNavbar from "components/Navbars/JardinNavbar.js";
+import JardinHeaderLanding from "components/Headers/JardinHeaderLanding.js";
+import JardinDefaultFooter from "components/Footers/JardinDefaultFooter.js";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -33,14 +29,14 @@ function LandingPage() {
   }, []);
   return (
     <>
-      <ExamplesNavbar />
+      <JardinNavbar />
       <div className="wrapper">
-        <LandingPageHeader />
+        <JardinHeaderLanding />
         <div className="section section-about-us">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Who we are?</h2>
+                <h2 className="title">Quienes somos?</h2>
                 <h5 className="description">
                   According to the National Oceanic and Atmospheric
                   Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -95,35 +91,23 @@ function LandingPage() {
                     continue whatever happens with climate change. Even if the
                     Arctic continues to be one of the fastest-warming regions of
                     the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    polar dark every winter. 
                   </p>
                   <p>
                     For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
+                    amount of ice will melt this summer.
                   </p>
                   <p>
                     The Arctic Ocean freezes every winter and much of the
                     sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                    continue whatever happens with climate change.
                   </p>
                 </Col>
               </Row>
             </div>
           </Container>
         </div>
-        <div className="section section-team text-center">
+        {/* <div className="section section-team text-center">
           <Container>
             <h2 className="title">Here is our team</h2>
             <div className="team">
@@ -255,7 +239,7 @@ function LandingPage() {
               </Row>
             </div>
           </Container>
-        </div>
+        </div> */}
         <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Want to work with us?</h2>
@@ -321,7 +305,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        <JardinDefaultFooter />
       </div>
     </>
   );

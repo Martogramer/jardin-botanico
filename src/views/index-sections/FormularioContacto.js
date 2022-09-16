@@ -3,12 +3,6 @@ import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  CardTitle,
-  Form,
   Col,
   Input,
   InputGroupAddon,
@@ -17,8 +11,6 @@ import {
   Container,
   Row
 } from "reactstrap";
-
-// core components
 
 function SignUp() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -35,12 +27,12 @@ function SignUp() {
           minHeight: "700px"
         }}
       >
-        <Container>
+        <Container id="contacto">
           
         <div className="section section-contact-us text-center">
           <Container>
-            <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your project is very important to us.</p>
+            <h2 className="title">Contactate con nosotros</h2>
+            <p className="description">Te enviaremos un mail con información detallada.</p>
             <Row>
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
@@ -54,7 +46,7 @@ function SignUp() {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="First Name..."
+                    placeholder="Nombre..."
                     type="text"
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
@@ -81,7 +73,7 @@ function SignUp() {
                   <Input
                     cols="80"
                     name="name"
-                    placeholder="Type a message..."
+                    placeholder="Tu consulta..."
                     rows="4"
                     type="textarea"
                   ></Input>
@@ -95,7 +87,7 @@ function SignUp() {
                     onClick={(e) => e.preventDefault()}
                     size="lg"
                   >
-                    Send Message
+                    Enviar
                   </Button>
                 </div>
               </Col>

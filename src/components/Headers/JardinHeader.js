@@ -42,29 +42,22 @@ function IndexHeader() {
             <h1 className="h1-seo">Jardín Botánico</h1>
             <h3>Paisajísmo para espacios reducidos, jardínes verticales y soluciones de patio para tu hogar.</h3>
           </div>
+          
+          
           <h6 className="category category-absolute">
-
           Ilustración por <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> en <a href="https://icons8.com/illustrations">Ouch!</a>
-            {/* Designed by{" "}
-            <a href="http://invisionapp.com/?ref=creativetim" target="_blank">
-              <img
-                alt="..."
-                className="invision-logo"
-                src={require("assets/img/invision-white-slim.png")}
-              ></img>
-            </a> */}
-            . Coded by{" "}
+            . Coded by {" "}
             <a
-              href="https://www.creative-tim.com?ref=nukr-index-header"
+              href="#"
               target="_blank"
-            >
+            > 
               <img
                 alt="..."
-                className="creative-tim-logo"
-                src={require("assets/img/creative-tim-white-slim2.png")}
+                className="teles-logo"
+                src={require("assets/img/vytuzp.jpg")}
               ></img>
             </a>
-            .
+            telescopiens.
           </h6>
         </Container>
       </div>
