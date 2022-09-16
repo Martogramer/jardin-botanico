@@ -1,29 +1,11 @@
 import React from "react";
-
-// reactstrap components
-// import {
-// } from "reactstrap";
-
-// core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import JardinHeader from "components/Headers/JardinHeader.js";
-import DarkFooter from "components/Footers/DarkFooter.js";
-
-// sections for this page
-import Images from "./index-sections/Images.js";
-import BasicElements from "./index-sections/BasicElements.js";
-import Navbars from "./index-sections/Navbars.js";
-import Tabs from "./index-sections/Tabs.js";
-import Pagination from "./index-sections/Pagination.js";
-import Notifications from "./index-sections/Notifications.js";
-import Typography from "./index-sections/Typography.js";
-import Javascript from "./index-sections/Javascript.js";
+import JardinDarkFooter from "components/Footers/JardinDarkFooter.js";
+import JardinNavbar from "../components/Navbars/JardinNavbar.js";
 import FotosJardin from "./index-sections/FotosJardin.js";
-import NucleoIcons from "./index-sections/NucleoIcons.js";
-import CompleteExamples from "./index-sections/CompleteExamples.js";
 import FormularioContacto from "./index-sections/FormularioContacto.js";
-import Examples from "./index-sections/Examples.js";
-import Download from "./index-sections/Download.js";
+import NosotrosHome from "./index-sections/NosotrosHome.js";
 
 function Index() {
   React.useEffect(() => {
@@ -39,28 +21,26 @@ function Index() {
   });
   return (
     <>
-      <IndexNavbar />
+      <JardinNavbar />
       <div className="wrapper">
         <JardinHeader />
         <div className="main">
-        
-          <Download />
+          <NosotrosHome />
           <FotosJardin />
           <FormularioContacto />
-          {/* <Examples /> */}
-{/*  
+          {/* <Examples />  
           <Images />
-        <BasicElements />
+          <BasicElements />
           <Navbars />
           <Tabs />
           <Pagination />
           <Notifications />
           <Typography />
           <Javascript />
-          <NucleoIcons /> */}
-          {/* <CompleteExamples /> */}
+          <NucleoIcons /> 
+          <CompleteExamples /> */}
         </div>
-        <DarkFooter />
+        <JardinDarkFooter />
       </div>
     </>
   );
