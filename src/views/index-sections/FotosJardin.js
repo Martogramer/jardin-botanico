@@ -7,7 +7,7 @@ import {
   Col,
   Carousel,
   CarouselItem,
-  CarouselIndicators
+  CarouselIndicators,
 } from "reactstrap";
 
 // core components
@@ -16,18 +16,18 @@ const items = [
   {
     src: require("assets/img/bg1.jpg"),
     altText: "Nature, United States",
-    caption: "Nature, United States"
+    caption: "Nature, United States",
   },
   {
     src: require("assets/img/bg3.jpg"),
     altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States"
+    caption: "Somewhere Beyond, United States",
   },
   {
     src: require("assets/img/bg4.jpg"),
     altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States"
-  }
+    caption: "Yellowstone National Park, United States",
+  },
 ];
 
 function CarouselSection() {
@@ -57,9 +57,13 @@ function CarouselSection() {
     <>
       <div className="section" id="carousel">
         <Container>
-          <div className="title">
-            <h2>Trabajamos para darle forma a tus ideas.</h2>
-            <h4>¿Necesitas inspiración? Algun paisaje de estos te puede dar ideas.</h4>
+          <div className="title flex flex-col items-center mb-2 justify-center text-center px-4 py-8">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">
+              Trabajamos para darle forma a tus ideas.
+            </h2>
+            <h4 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+              
+            </h4>
           </div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">
