@@ -12,6 +12,7 @@ import LoginPage from "views/examples/LoginPage.js";
 import Contact from "views/examples/Contact.js";
 import LandingPage from "views/examples/JardinLanding.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import MailingPage from "views/examples/MailingPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -39,6 +40,10 @@ root.render(
         <Route
           path="/login-page"
           render={(props) => <LoginPage {...props} />}
+        />
+        <Route
+          path="/mailing-page"
+          render={(props) => <MailingPage {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
